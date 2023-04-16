@@ -1,0 +1,26 @@
+.profileContainer{
+    display: flex;  
+    margin-top: 10px;
+    margin-bottom: 10px;
+    gap:20px;
+}
+
+.personProfile{
+    display: flex;
+    align-items: center;
+    gap:15px;
+    border: 1px solid white;
+    width: 510px;
+    background-color: white;
+    padding:15px;
+}
+
+.personData{
+    line-height: 4px;
+}
+img{
+    height: 50px;
+}
+.main{
+    margin-bottom: 20px;
+}

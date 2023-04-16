@@ -1,0 +1,21 @@
+.body {
+    background: linear-gradient(rgb(195, 33, 111), orange);
+    font-size: 13px;
+
+}
+
+.appContainer{
+    margin-left: 80px;
+}
+
+#searchbar{
+    width: 90%;
+    height:30px;
+    margin-top:20px;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+#searchbar:focus{
+    outline: none;
+}
+
