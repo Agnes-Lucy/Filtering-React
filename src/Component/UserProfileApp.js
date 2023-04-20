@@ -2,26 +2,27 @@ import {useState} from "react"
 import SearchBar from "./SearchBar";
 import Profile from "./Profile";
 import "../Style/Userapp.css";
-import {People} from "./People";
+import { People } from "./People";
 
 
 const UserProfileApp = () => {
-    const [filteredName, setfilteredName] = useState([]);
+        const [filteredName, setFilteredName] = useState("");
 
-        const handlefilteredChange = (e) => {
-            setfilteredName (e.target.value.toLowerCase(e))
+        const handleFilteredChange = (event) => {
+            setFilteredName(event.target.value.toLowerCase())
+            //console.log())
         }
-        const searchName = (filteredName) => (Name) => Name.firstName.tolowercase().includes(filteredName) ||
-        Name.lastName.toLowerCase().includes(filteredName)
+        
+        //const filtered = People.filter(person => {
+          // return People.firstName.toLowerCase()=== "filtered" || People.lastName.toLowerCase() === "filtered"
+           // })
+           //console.log(filtered)
+
     return (
         <div className="body">
             <div className="appContainer">
-                <SearchBar value = {filteredName} onChange={handlefilteredChange} />
-                {People.filter(searchName(filteredName)).map((person)=> {
-                    return (
-                        <Profile key={person.id}/>
-                    )
-                })}
+                <SearchBar value = {filteredName} onChange={handleFilteredChange} />            
+                  <Profile/> 
                 
             </div>
         </div>
