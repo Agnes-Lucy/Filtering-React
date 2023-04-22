@@ -1,6 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+.body {
+    background: linear-gradient(rgb(195, 33, 111), orange);
+    font-size: 13px;
+    height: 95vh;
+
+}
+
+.appContainer{
+    margin-left: 80px;
+    width: 90%;
+}
+
+#searchbar{
+    width: 94%;
+    height:30px;
+    margin-top:20px;
+    border: 1px solid white;
+    border-radius: 4px;
+    font-size: 10px;
+    font-style: italic;
+}
+
+#searchbar:focus{
+    outline: none;
+}
+
+
 .gridContainer {
     display:grid;
-    grid-template-columns: repeat(2, 432px);
+    grid-template-columns: repeat(2, 563px);
     grid-row-gap: 4px;
     grid-column-gap: 17px
 }
@@ -14,8 +44,8 @@ li{
     border-radius: 4px;
     margin-top: 10px;
     background-color: white;
-    height: 60px;
-    padding: 2px;
+    height: 80px;
+    padding: 4px;
 }
 
 .personinfo{
@@ -27,7 +57,7 @@ li{
 }
 
 img{
-    height: 40px;
+    height: 60px;
 }
 
 .personName{
@@ -37,5 +67,5 @@ img{
 }
 .personData{
     line-height: 1px;
-    font-size: 10px;
+    font-size: 12px;
 }

@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import UserProfileApp from './Component/UserProfileApp';
+import Profile from './Component/Profile';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <UserProfileApp />
+    <Profile/>
   </React.StrictMode>
 );
 
